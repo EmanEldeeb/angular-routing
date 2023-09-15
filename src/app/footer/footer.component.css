@@ -1,0 +1,22 @@
+footer {
+  color: white;
+}
+footer h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+footer .upper-part {
+  background-color: var(--second-color);
+}
+footer .upper-part .media li {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+footer .tail {
+  background-color: #1a252f;
+}

@@ -1,0 +1,25 @@
+<section class="portfolio py-5">
+  <div class="container py-5">
+    <div
+      class="image-zoom"
+      [ngClass]="{ 'd-none': !zoomedImageVisible }"
+      (click)="closeZoomedImage()"
+    >
+      <div class="zoomed">
+        <img [src]="zoomedImageUrl" alt="" class="w-100" />
+      </div>
+    </div>
+    <h2 class="pt-3">PORTFOLIO COMPONENT</h2>
+    <div class="star-icon"><i class="fa-solid fa-star"></i></div>
+    <div class="row g-4 mt-2">
+      <div class="col-md-4" *ngFor="let imagesrc of imagesSrcs; let i = index">
+        <div class="port-box" (click)="showZoomedImage(image_i)">
+          <img #image_i [src]="imagesrc" alt="" class="w-100" />
+          <div class="layer">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,52 @@
+.portfolio .star-icon {
+  color: var(--second-color);
+}
+.portfolio .star-icon::after,
+.portfolio .star-icon::before {
+  background-color: var(--second-color);
+}
+.portfolio .port-box {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio .port-box .layer {
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 100px;
+  background-color: #1abc9cd3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.portfolio .port-box:hover .layer {
+  opacity: 1;
+}
+
+.portfolio .port-box img {
+  border-radius: 10px;
+}
+
+.portfolio .image-zoom {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #dcdcdcac;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .image-zoom .zoomed {
+  width: 40%;
+  height: 40%;
+}

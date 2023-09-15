@@ -1,0 +1,67 @@
+<section class="contact py-5">
+  <div class="container py-5">
+    <h2 class="pt-5">CONATCT SECTION</h2>
+    <div class="star-icon mb-5"><i class="fa-solid fa-star"></i></div>
+    <div
+      class="contact-info w-50 d-flex flex-column justfiy-content-center align-items-center"
+    >
+      <div class="input-box">
+        <p
+          class="input-title"
+          [ngStyle]="{ top: inputName !== '' ? '10px' : '101%' }"
+        >
+          userName:
+        </p>
+        <input
+          [(ngModel)]="inputName"
+          type="text"
+          placeholder="userName"
+          name="userName"
+        />
+      </div>
+      <div class="input-box">
+        <p
+          [ngStyle]="{ top: inputage !== '' ? '10px' : '101%' }"
+          class="input-title"
+        >
+          userAge:
+        </p>
+        <input
+          [(ngModel)]="inputage"
+          type="text"
+          placeholder="userAge"
+          name="userAge"
+        />
+      </div>
+      <div class="input-box">
+        <p
+          [ngStyle]="{ top: inputemail !== '' ? '10px' : '101%' }"
+          class="input-title"
+        >
+          userEmail:
+        </p>
+        <input
+          [(ngModel)]="inputemail"
+          type="email"
+          placeholder="userEmail"
+          name="userEmail"
+        />
+      </div>
+      <div class="input-box">
+        <p
+          [ngStyle]="{ top: inputpass !== '' ? '10px' : '101%' }"
+          class="input-title"
+        >
+          userPassword:
+        </p>
+        <input
+          [(ngModel)]="inputpass"
+          type="text"
+          placeholder="userPassword"
+          name="userPassword"
+        />
+      </div>
+      <button>send message</button>
+    </div>
+  </div>
+</section>

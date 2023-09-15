@@ -1,0 +1,21 @@
+nav {
+  background-color: var(--second-color);
+}
+nav .container {
+  transition: all 1s;
+}
+nav .logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+nav .navbar-nav li a {
+  font-size: 20px;
+  transition: 0.5s;
+  margin-inline: 10px;
+}
+
+.active {
+  background-color: var(--main-color);
+  border-radius: 5px;
+  padding-inline: 10px;
+}
